@@ -217,7 +217,7 @@ $(function() {
     
     $(window).on(setInterval(function(){
         width = $(window).width();
-        if (width >= 425) {
+        if (width > 425) {
             menu.removeClass('active');
             menu.slideUp(300);
             body.removeClass('lock');
