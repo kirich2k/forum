@@ -42,13 +42,16 @@ $(function() {
     const special_rp = $('#special_rp');
     const menu_style_close = $('#menu_style_close');
     const menu_style_close_white = $('#menu_style_close_white');
+    let width; // Ширина экрана
     
     $(burger).click(function(){
-        menu.toggleClass('active');
-        menu.slideToggle(500);
-        body.toggleClass('lock');
-        burger.toggleClass('active');
-        burger_item.toggleClass('active');
+        if (width <= 425) {
+            menu.toggleClass('active');
+            menu.slideToggle(500);
+            body.toggleClass('lock');
+            burger.toggleClass('active');
+            burger_item.toggleClass('active');
+        };
     });
     
     $(button_style).click(function(){
@@ -212,8 +215,14 @@ $(function() {
         };
     });
     
-    /*$(window).on(setInterval(function(){
-        console.log($(window).scrollTop());
-    }, 100));*/
-    
+    $(window).on(setInterval(function(){
+        width = $(window).width();
+        if (width >= 425) {
+            menu.removeClass('active');
+            menu.slideUp(300);
+            body.removeClass('lock');
+            burger.removeClass('active');
+            burger_item.removeClass('active');
+        };
+    }, 100));    
 });
