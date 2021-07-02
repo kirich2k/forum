@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форум Life Role Play</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header__logo">
+                    <a class="logo" href="file:///C:/Users/Faers/Desktop/Life%20RP/site/index.html" target="_blank"><img src="img/logo.png" alt="Изображение"></a>
+                </div>
+                <nav class="nav">
+                    <a class="nav_link" href="file:///C:/Users/Faers/Desktop/Life%20RP/site/index.html" target="_blank">Главная</a>
+                    <a class="nav_link" href="file:///C:/Users/Faers/Desktop/Life%20RP/forum/index.html#">Форум</a>
+                    <a class="nav_link" href="#" target="_blank">Донат</a>
+                    <a class="nav_link" href="#" target="_blank">Личный кабинет</a>
+                </nav>
+                <!--Burger-->
+                <a class="burger" id="burger">
+                    <span class="burger_item" id="burger_item">Меню</span>
+                </a>
+                <!--Menu-->
+                <div class="menu" id="menu">
+                    <div class="container container_menu" id="container_menu">
+                        <div class="menu_inner">
+                                <a class="menu_link" href="file:///C:/Users/Faers/Desktop/Life%20RP/site/index.html" target="_blank">Главная</a>
+                                <a class="menu_link" href="file:///C:/Users/Faers/Desktop/Life%20RP/forum/index.html#">Форум</a>
+                                <a class="menu_link" href="#" target="_blank">Донат</a>
+                                <a class="menu_link" href="#" target="_blank">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <div class="selection_menu" id="selection_menu">
+        <div class="selection_menu_inner" id="selection_menu_inner">
+            <div class="menu_style">
+                <div class="menu_style_inner" id="menu_style_inner">
+                    <div class="menu_style_text" id="menu_style_text">Выбор стиля страницы</div>
+                    <div class="menu_style_close_button" id="menu_style_close_button">
+                        <img class="menu_style_close" id="menu_style_close" src="img/x.png" alt="Изображение">
+                        <img class="menu_style_close_white" id="menu_style_close_white" src="img/x_black.png" alt="Изображение">
+                    </div>
+                </div>
+                <div class="menu_style_button">
+                    <button class="menu_style_toggle" id="Default">По умолчанию</button>
+                    <button class="menu_style_toggle" id="White">Белый</button>
+                    <button class="menu_style_toggle" id="Black">Чёрный</button>
+                </div>
+            </div>
+            <div class="menu_style_logo">
+                <img class="menu_style_logo_logo" src="img/logo.png" alt="Изображение">
+            </div>
+        </div>
+    </div>
+    <div class="out_selection_menu" id="out_selection_menu"></div>
+    <div class="ground">
+        <div class="main" id="main">
+            <article class="main_inner">
+                <section class="group">
+                    <div class="title">
+                        <div class="container container_title">
+                            <a class="title_inner" href="#">Главный раздел</a>
+                        </div>
+                    </div>
+                    <div class="base">
+                        <img class="base_img" src="img/message_green.png" alt="Изображение">
+                        <a class="base_text new" href="#">Новости и информация</a>
+                    </div>
+                    <div class="base">
+                        <img class="base_img" src="img/message.png" alt="Изображение">
+                        <a class="base_text" href="#">Тех.раздел</a>
+                    </div>
+                    <div class="base">
+                        <img class="base_img" src="img/link.png" alt="Изображение">
+                        <a class="base_text" href="#" target="_blank">Группа ВКонтакте</a>
+                    </div>
+                    <div class="base">
+                        <img class="base_img" src="img/link.png" alt="Изображение">
+                        <a class="base_text" href="#" target="_blank">Группа в Discord</a>
+                    </div>
+                </section>
+                <section class="group">
+                    <div class="title">
+                        <div class="container container_title">
+                            <a class="title_inner" href="#">Игровые сервера</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">Сервер <font color="#bf0909">RED</font></a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">Сервер <font color="#e8c100">Yellow</font></a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">Сервер <font color="#4ab514">Green</font></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="group">
+                    <div class="title">
+                        <div class="container container_title">
+                            <a class="title_inner" href="#">RolePlay</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">RolePlay ситуации</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message_green.png" alt="Изображение">
+                            <a class="base_text new" href="#">Неофицальные организации</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">RolePlay биографии</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="group">
+                    <div class="title">
+                        <div class="container container_title">
+                            <a class="title_inner" href="#">Прочее</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">Общая курилка</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">Видеоролики</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message.png" alt="Изображение">
+                            <a class="base_text" href="#">Музыка</a>
+                        </div>
+                        <div class="base">
+                            <img class="base_img" src="img/message_green.png" alt="Изображение">
+                            <a class="base_text new" href="#">Графика</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <aside class="sidebar" id="sidebar">
+                    <div class="title">
+                        <div class="container">
+                            <img class="people_img" id="people_img" src="img/people.png" alt="Изображение">
+                            <img class="people_black_img" id="people_black_img" src="img/people_black.png" alt="Изображение">
+                            <span class="title_inner" style="opacity: 0.75">Пользователи онлайн</span>
+                        </div>
+                    </div>
+                    <div class="base_sidebar"> 
+                        <div class="base_text_sidebar">Продолжение следует....</div>
+                    </div>
+                </aside>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer_inner" id="footer_inner">
+            <div class="special" id="special">Специально для <a href="file:///C:/Users/Faers/Desktop/Life%20RP/site/index.html" target="_blank" style="text-decoration: none; opacity: 1"><fount style="color:#0ca01d"> Life </fount><fount class="special_rp" id="special_rp">Role Play</fount></a></div>
+            <div class="footer_settings">
+                <div class="footer_settings_inner">
+                    <div class="button_out">
+                        <button class="footer_button" id="button_style">
+                            <img class="expand" id="expand" src="img/arrows-angle-expand.png" alt="Изображение">
+                            <img class="reduce" id="reduce" src="img/arrows-angle-contract.png" alt="Изображение">
+                        </button>
+                        <button class="footer_button" id="button_skin">
+                            <div class="selection_style" id="selection_style">Выбор стиля</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer_nav">
+                    <a class="footer_nav_link" href="#" target="_blank">Обратная связь</a>
+                    <a class="footer_nav_link" href="#" target="_blank">Условия и правила</a>
+                    <a class="footer_nav_link" href="#" target="_blank">Политика конфиденциальности</a>
+                    <a class="footer_nav_link" href="#" target="_blank">Помощь</a>
+                    <a class="footer_nav_link" href="file:///C:/Users/Faers/Desktop/Life%20RP/site/index.html" target="_blank">Главная</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Javascript/jQuery-->
+    <script src='app.js'></script>
+</body>
+</html>
